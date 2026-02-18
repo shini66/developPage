@@ -6,7 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>developpage</title>
   </head>
-  <body>
+  <body class="bg-gray-400">
+
+    <nav class="bg-white shadow-md">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-gray-800">Develop SA</h1>
+
+        <div class="space-x-3">
+          <a href="#" class="hover:text-blue-500 font-bold">Inicio</a>
+          <a href="#services" class="hover:text-blue-500 font-bold">Servicios</a>
+          <a href="#price" class="hover:text-blue-500 font-bold">Precios</a>
+          <a href="#contact" class="hover:text-blue-500 font-bold">Contacto</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="text-center py-20 bg-gradient-to-b from-blue-700 to-gray-400 text-white">
+      <h2 class="text-5xl font-bold mb-9">Convertimos Ideas en realidad</h2>
+      <p class="text-xl mb-6">Aumente su productividad y eficiencia con nuestras soluciones innovadoras.</p>
+
+      <button id="contactButton" class="border-2 border-white text-white px-4 py-2 rounded hover:border-black hover:text-black">Learn More</button>
+    </section>
+
+    <section id="services">
+      <div class="max-w-6xl mx-auto px-4 py-10">
+        <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center">Nuestros Servicios</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center">
+            <img src="web.png" alt="Desarrollo Web" class="w-1/2 md:w-full h-auto mb-4 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4">Desarrollo Web</h3>
+            <p class="text-gray-600">Creamos sitios web modernos y responsivos que se adaptan a cualquier dispositivo.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center">
+            <img src="mobile.png" alt="Aplicaciones Móviles" class="w-1/2 md:w-full h-auto mb-4 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4">Aplicaciones Móviles</h3>
+            <p class="text-gray-600">Desarrollamos aplicaciones móviles nativas e híbridas para iOS y Android.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center">
+            <img src="consulting.png" alt="Consultoría Tecnológica" class="w-1/2 md:w-full h-auto mb-4 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4">Consultoría Tecnológica</h3>
+            <p class="text-gray-600">Ofrecemos asesoramiento experto para optimizar su infraestructura tecnológica.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="price" class="py-16 bg-gradient-to-b to-blue-700 from-gray-400 text-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-12 text-center">Precios</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md text-center flex flex-col">
+            <h3 class="text-2xl font-bold mb-4">Básico</h3>
+            <p class="text-gray-600 mb-6">Ideal para pequeñas empresas y proyectos personales.</p>
+            <p class="text-3xl font-bold mb-6">$50</p>
+            <ul class="text-left mb-6 flex-grow">
+              <li class="mb-2">Desarrollo de sitio web básico</li>
+              <li class="mb-2">Diseño responsivo</li>
+              <li class="mb-2">Soporte por 1 mes</li>
+            </ul>
+            <button class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">Contratar</button>
+          </div>
+          <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md text-center flex flex-col">
+            <h3 class="text-2xl font-bold mb-4">Profesional</h3>
+            <p class="text-gray-600 mb-6">Ideal para medianas empresas.</p>
+            <p class="text-3xl font-bold mb-6">$100</p>
+            <ul class="text-left mb-6 flex-grow">
+              <li class="mb-2">Desarrollo de sitio web avanzado</li>
+              <li class="mb-2">Diseño responsivo</li>
+              <li class="mb-2">Soporte por 1 mes</li>
+            </ul>
+            <button class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">Contratar</button>
+          </div>
+          <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md text-center flex flex-col">
+            <h3 class="text-2xl font-bold mb-4">Premium</h3>
+            <p class="text-gray-600 mb-6">Ideal para grandes empresas.</p>
+            <p class="text-3xl font-bold mb-6">$200</p>
+            <ul class="text-left mb-6 flex-grow">
+              <li class="mb-2">Desarrollo de sitio web premium</li>
+              <li class="mb-2">Diseño responsivo</li>
+              <li class="mb-2">Soporte por 1 mes</li>
+            </ul>
+            <button class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">Contratar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="text-center py-20 bg-gray-200">
+      <h2 class="text-4xl font-bold text-gray-800 mb-6">Contáctanos</h2>
+      <p class="text-xl mb-6">¿Tienes un proyecto en mente? ¡Estamos aquí para ayudarte a hacerlo realidad!</p>
+      <form action="" method="post" class="flex flex-col items-center">
+        <input type="text" name="name" placeholder="Tu Nombre" class="border-2 border-gray-300 rounded px-4 py-2 mb-4 w-full max-w-md">
+        <input type="email" name="email" placeholder="Tu Correo Electrónico" class="border-2 border-gray-300 rounded px-4 py-2 mb-4 w-full max-w-md">
+        <textarea name="message" placeholder="Tu Mensaje" class="border-2 border-gray-300 rounded px-4 py-2 mb-4 w-full max-w-md h-32"></textarea>
+        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">Enviar Mensaje</button>
+      </form>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        &copy; 2024 Develop SA. Todos los derechos reservados.
+      </div>
+    </footer>
+
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
